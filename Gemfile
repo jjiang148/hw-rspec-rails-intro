@@ -28,3 +28,11 @@ group :production do
   gem 'pg', '~> 0.2'
   gem 'rails_12factor'
 end
+
+gem 'faraday', '1.8.0'  # for API requests
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'guard-rspec'      # auto re-run tests
+  gem 'webmock', '2.3.2'
+end
